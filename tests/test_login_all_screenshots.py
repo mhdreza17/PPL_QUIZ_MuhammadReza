@@ -30,8 +30,8 @@ class TestLoginFunctionalPositive:
         time.sleep(1)
         screenshot(driver, "TC_LGN_001_01_page")
         
-        driver.find_element(By.ID, "username").send_keys("mhdreza10")
-        driver.find_element(By.ID, "InputPassword").send_keys("mhdreza10")
+        driver.find_element(By.ID, "username").send_keys("irul")
+        driver.find_element(By.ID, "InputPassword").send_keys("irul123")
         screenshot(driver, "TC_LGN_001_02_filled")
         
         driver.find_element(By.NAME, "submit").click()
