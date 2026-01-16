@@ -61,7 +61,9 @@ jobs:
     - name: Update database connection
       run: |
         sed -i "s/\$host     = 'localhost'/\$host     = '127.0.0.1'/" koneksi.php
+        sed -i "s/\$user     = 'root'/\$user     = 'root'/" koneksi.php
         sed -i "s/\$password = ''/\$password = 'root'/" koneksi.php
+        sed -i "s/\$db       = 'quiz_pengupil'/\$db       = 'quiz_pengupil'/" koneksi.php
     
     - name: Start PHP built-in server
       run: |
