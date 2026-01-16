@@ -45,9 +45,9 @@ class TestLoginValidation:
         )
         
         # Fill in valid credentials
-        username_field.send_keys("testuser123")
+        username_field.send_keys("mhdreza10")
         password_field = driver.find_element(By.ID, "InputPassword")
-        password_field.send_keys("TestPassword123!")
+        password_field.send_keys("mhdreza10")
         
         take_screenshot(driver, "FT_001", "form_filled")
         
